@@ -50,5 +50,5 @@ if __name__ == "__main__":
     # Uncomment the line below to fetch all data
     df_all = fetch_all_ev_data()
     # Uncomment the lines below to print the data to csv
-    os.makedirs('src/etl/electric_vehicles/data/ev_population_data.csv', exist_ok=True)
-    df_all.to_csv('src/etl/electric_vehicles/data/ev_population_data.csv', index=False)
+    os.makedirs('src/etl/electric_vehicles/data/raw', exist_ok=True)
+    df_all.to_csv('src/etl/electric_vehicles/data/raw/ev_population_data.csv', index=False)
